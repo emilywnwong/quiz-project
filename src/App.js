@@ -7,6 +7,7 @@ function App() {
   const questions = [
 		{
 			questionText: 'Which country is this person from?',
+			img: '/images/placeholder.jpg',
 			answerOptions: [
 				{ answerText: 'Malaysia', isCorrect: false },
 				{ answerText: 'China', isCorrect: false },
@@ -16,6 +17,7 @@ function App() {
 		},
 		{
 			questionText: 'Which country is this person from?',
+			img: '/images/anotherone.jpg',
 			answerOptions: [
 				{ answerText: 'Singapore', isCorrect: false },
 				{ answerText: 'Vietnam', isCorrect: true },
@@ -25,6 +27,7 @@ function App() {
 		},
 		{
 			questionText: 'Which country is this person from?',
+			img: '/images/placeholder.jpg',
 			answerOptions: [
 				{ answerText: 'North Korea', isCorrect: true },
 				{ answerText: 'Hong Kong', isCorrect: false },
@@ -34,6 +37,7 @@ function App() {
 		},
 		{
 			questionText: 'Which country is this person from?',
+			img: '/images/anotherone.jpg',
 			answerOptions: [
 				{ answerText: 'Malaysia', isCorrect: false },
 				{ answerText: 'China', isCorrect: false },
@@ -71,7 +75,9 @@ function App() {
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
+						<progress value={currentQuestion} max="4" />
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
+						<img src={questions[currentQuestion].img} />
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
