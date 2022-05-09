@@ -2,7 +2,7 @@
     {
         "id": 1,
         "questionText": "Which country is this person from?",
-        "img": "/images/placeholder.jpg",
+        "img": "/images/japanese.jpg",
         "answerOptions": [
             { "key": 1, "answerText": "Malaysia", "isCorrect": false },
             { "key": 2, "answerText": "China", "isCorrect": false },
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "questionText": "Which country is this person from?",
-        "img": "/images/anotherone.jpg",
+        "img": "/images/vietnamese.jpg",
         "answerOptions": [
             { "key": 1, "answerText": "Singapore", "isCorrect": false },
             { "key": 2, "answerText": "Vietnam", "isCorrect": true },
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "questionText": "Which country is this person from?",
-        "img": "/images/placeholder.jpg",
+        "img": "/images/kim-jong.jpg",
         "answerOptions": [
             { "key": 1, "answerText": "North Korea", "isCorrect": true },
             { "key": 2, "answerText": "Hong Kong", "isCorrect": false },
@@ -35,7 +35,7 @@
     {
         "id": 4,
         "questionText": "Which country is this person from?",
-        "img": "/images/anotherone.jpg",
+        "img": "/images/thai.jpg",
         "answerOptions": [
             { "key": 1, "answerText": "Malaysia", "isCorrect": false },
             { "key": 2, "answerText": "China", "isCorrect": false },
@@ -46,7 +46,7 @@
     {
         "id": 5,
         "questionText": "Which country is this person from?",
-        "img": "/images/placeholder.jpg",
+        "img": "/images/indian.jpg",
         "answerOptions": [
             { "key": 1, "answerText": "India", "isCorrect": true },
             { "key": 2, "answerText": "Taiwan", "isCorrect": false },
@@ -57,7 +57,7 @@
     {
         "id": 6,
         "questionText": "Which country is this person from?",
-        "img": "/images/anotherone.jpg",
+        "img": "/images/chinese.jpg",
         "answerOptions": [
             { "key": 1, "answerText": "North Korea", "isCorrect": false },
             { "key": 2, "answerText": "China", "isCorrect": true },
