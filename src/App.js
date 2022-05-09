@@ -33,31 +33,33 @@ console.log(questions);
 	}
 
 	return (
-		<div className='app'>
-			{showResult ? (
-				<div>
+		<div className='app-border'>
+			<div className='app'>
+				{showResult ? (
+					<div>
 
-				<Result score={score} fullScore={questions.length}/>
-				<button onClick={handleRestart}> Try again! </button>
+					<Result score={score} fullScore={questions.length}/>
+					<button onClick={handleRestart}> Try again! </button>
 
-				</div>
-				) : (
-				<>
-					<div className='question-section'>
-						<div className='question-count'>
-							<span>Question {currentQuestion + 1}</span>/{questions.length}
+					</div>
+					) : (
+					<>
+						<div className='question-section'>
+							<div className='question-count'>
+								<span>Question {currentQuestion + 1}</span>/{questions.length}
+							</div>
+							<progress value={currentQuestion} max={questions.length} />
+							<div className='question-text'>{questions[currentQuestion].questionText}</div>
+							<img src={questions[currentQuestion].img} />
 						</div>
-						<progress value={currentQuestion} max={questions.length} />
-						<div className='question-text'>{questions[currentQuestion].questionText}</div>
-						<img src={questions[currentQuestion].img} />
-					</div>
-					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button key={answerOption.key} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-						))}
-					</div>
-				</>
-			)}
+						<div className='answer-section'>
+							{questions[currentQuestion].answerOptions.map((answerOption) => (
+								<button key={answerOption.key} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							))}
+						</div>
+					</>
+				)}
+			</div>
 		</div>
 	);
 }
