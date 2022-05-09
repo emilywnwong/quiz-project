@@ -1,6 +1,6 @@
 import './App.css';
-
 import React, { useState } from 'react';
+import Result from './components/Result'
 
 const questions= require('./questions.json').questions; 
 
@@ -9,7 +9,7 @@ function App() {
 console.log(questions);
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [showScore, setShowScore] = useState(false);
+	const [showResult, setShowResult] = useState(false);
 	const [score, setScore] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
@@ -21,22 +21,33 @@ console.log(questions);
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
 		} else {
-			setShowScore(true);
+			setShowResult(true);
 		}
 	};
+
+	const handleRestart = () => {
+		console.log('clicked')
+		setCurrentQuestion(0);
+		setShowResult(false);
+		setScore(0);
+	}
+
 	return (
 		<div className='app'>
-			{showScore ? (
-				<div className='score-section'>
-					You scored {score} out of {questions.length}
+			{showResult ? (
+				<div>
+
+				<Result score={score} fullScore={questions.length}/>
+				<button onClick={handleRestart}> Try again! </button>
+
 				</div>
-			) : (
+				) : (
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
-						<progress value={currentQuestion} max="4" />
+						<progress value={currentQuestion} max={questions.length} />
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 						<img src={questions[currentQuestion].img} />
 					</div>
