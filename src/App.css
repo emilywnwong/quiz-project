@@ -82,7 +82,7 @@ button {
  }
 
  button:hover {
-  background-color: #F66B0E;
+  background-color: #ED8975;
   box-shadow: 0px 15px 20px rgba(167, 44, 3, 0.4);
   color: #fff;
   transform: translateY(-7px);
