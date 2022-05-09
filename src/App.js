@@ -2,50 +2,11 @@ import './App.css';
 
 import React, { useState } from 'react';
 
+const questions= require('./questions.json').questions; 
 
 function App() {
-  const questions = [
-		{
-			questionText: 'Which country is this person from?',
-			img: '/images/placeholder.jpg',
-			answerOptions: [
-				{ answerText: 'Malaysia', isCorrect: false },
-				{ answerText: 'China', isCorrect: false },
-				{ answerText: 'Japan', isCorrect: true },
-				{ answerText: 'Thailand', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Which country is this person from?',
-			img: '/images/anotherone.jpg',
-			answerOptions: [
-				{ answerText: 'Singapore', isCorrect: false },
-				{ answerText: 'Vietnam', isCorrect: true },
-				{ answerText: 'Philippines', isCorrect: false },
-				{ answerText: 'South Korea', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Which country is this person from?',
-			img: '/images/placeholder.jpg',
-			answerOptions: [
-				{ answerText: 'North Korea', isCorrect: true },
-				{ answerText: 'Hong Kong', isCorrect: false },
-				{ answerText: 'China', isCorrect: false },
-				{ answerText: 'South Korea', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Which country is this person from?',
-			img: '/images/anotherone.jpg',
-			answerOptions: [
-				{ answerText: 'Malaysia', isCorrect: false },
-				{ answerText: 'China', isCorrect: false },
-				{ answerText: 'Japan', isCorrect: false },
-				{ answerText: 'Thailand', isCorrect: true },
-			],
-		},
-	];
+
+console.log(questions);
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
@@ -81,7 +42,7 @@ function App() {
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<button key={answerOption.key} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 						))}
 					</div>
 				</>

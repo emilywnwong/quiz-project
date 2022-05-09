@@ -1,0 +1,69 @@
+{ "questions" : [
+    {
+        "id": 1,
+        "questionText": "Which country is this person from?",
+        "img": "/images/placeholder.jpg",
+        "answerOptions": [
+            { "key": 1, "answerText": "Malaysia", "isCorrect": false },
+            { "key": 2, "answerText": "China", "isCorrect": false },
+            { "key": 3, "answerText": "Japan", "isCorrect": true },
+            { "key": 4, "answerText": "Thailand", "isCorrect": false }
+        ]
+    },
+    {
+        "id": 2,
+        "questionText": "Which country is this person from?",
+        "img": "/images/anotherone.jpg",
+        "answerOptions": [
+            { "key": 1, "answerText": "Singapore", "isCorrect": false },
+            { "key": 2, "answerText": "Vietnam", "isCorrect": true },
+            { "key": 3, "answerText": "Philippines", "isCorrect": false },
+            { "key": 4, "answerText": "South Korea", "isCorrect": false }
+        ]
+    },
+    {
+        "id": 3,
+        "questionText": "Which country is this person from?",
+        "img": "/images/placeholder.jpg",
+        "answerOptions": [
+            { "key": 1, "answerText": "North Korea", "isCorrect": true },
+            { "key": 2, "answerText": "Hong Kong", "isCorrect": false },
+            { "key": 3, "answerText": "China", "isCorrect": false },
+            { "key": 4, "answerText": "South Korea", "isCorrect": false }
+        ]
+    },
+    {
+        "id": 4,
+        "questionText": "Which country is this person from?",
+        "img": "/images/anotherone.jpg",
+        "answerOptions": [
+            { "key": 1, "answerText": "Malaysia", "isCorrect": false },
+            { "key": 2, "answerText": "China", "isCorrect": false },
+            { "key": 3, "answerText": "Japan", "isCorrect": false },
+            { "key": 4, "answerText": "Thailand", "isCorrect": true }
+        ]
+    },
+    {
+        "id": 5,
+        "questionText": "Which country is this person from?",
+        "img": "/images/placeholder.jpg",
+        "answerOptions": [
+            { "key": 1, "answerText": "India", "isCorrect": true },
+            { "key": 2, "answerText": "Taiwan", "isCorrect": false },
+            { "key": 3, "answerText": "China", "isCorrect": false },
+            { "key": 4, "answerText": "South Korea", "isCorrect": false }
+        ]
+    },
+    {
+        "id": 6,
+        "questionText": "Which country is this person from?",
+        "img": "/images/anotherone.jpg",
+        "answerOptions": [
+            { "key": 1, "answerText": "North Korea", "isCorrect": false },
+            { "key": 2, "answerText": "China", "isCorrect": true },
+            { "key": 3, "answerText": "Japan", "isCorrect": false },
+            { "key": 4, "answerText": "Thailand", "isCorrect": false }
+        ]
+    }
+]
+}
