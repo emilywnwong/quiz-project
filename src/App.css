@@ -5,6 +5,8 @@
 img {
   width: 50%;
   height: auto;
+  max-height: 350px;
+  max-width: 350px;
   margin: auto;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -76,6 +78,7 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  margin: 7px
  }
 
  button:hover {
